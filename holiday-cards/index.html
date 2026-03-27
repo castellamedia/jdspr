@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holiday Cards | JDS PR</title>
+  <meta name="description" content="JDS PR holiday cards through the years.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Holiday Cards</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="holiday-year">
+      <h3>2015</h3>
+      <div class="holiday-cards-grid">
+        <img src="../images/holiday-cards/2015-outside.webp" alt="2015 Holiday Card Outside" loading="lazy">
+        <img src="../images/holiday-cards/2015-inside.webp" alt="2015 Holiday Card Inside" loading="lazy">
+      </div>
+    </div>
+
+    <div class="holiday-year">
+      <h3>2008</h3>
+      <div class="holiday-cards-grid">
+        <img src="../images/holiday-cards/2008-outside.webp" alt="2008 Holiday Card Outside" loading="lazy">
+        <img src="../images/holiday-cards/2008-inside.webp" alt="2008 Holiday Card Inside" loading="lazy">
+      </div>
+    </div>
+
+    <div class="holiday-year">
+      <h3>2004</h3>
+      <div class="holiday-cards-grid">
+        <img src="../images/holiday-cards/2004-outside.webp" alt="2004 Holiday Card Outside" loading="lazy">
+        <img src="../images/holiday-cards/2004-inside.webp" alt="2004 Holiday Card Inside" loading="lazy">
+      </div>
+    </div>
+
+    <div class="holiday-year">
+      <h3>2003</h3>
+      <div class="holiday-cards-grid">
+        <img src="../images/holiday-cards/2003-outside.webp" alt="2003 Holiday Card Outside" loading="lazy">
+        <img src="../images/holiday-cards/2003-inside.webp" alt="2003 Holiday Card Inside" loading="lazy">
+      </div>
+    </div>
+
+    <div class="holiday-year">
+      <h3>2002</h3>
+      <div class="holiday-cards-grid">
+        <img src="../images/holiday-cards/2002-outside.gif" alt="2002 Holiday Card Outside" loading="lazy">
+        <img src="../images/holiday-cards/2002-inside.gif" alt="2002 Holiday Card Inside" loading="lazy">
+      </div>
+    </div>
+
+    <div class="holiday-year">
+      <h3>2001</h3>
+      <div class="holiday-cards-grid">
+        <img src="../images/holiday-cards/2001-outside.jpg" alt="2001 Holiday Card Outside" loading="lazy">
+        <img src="../images/holiday-cards/2001-inside.gif" alt="2001 Holiday Card Inside" loading="lazy">
+      </div>
+    </div>
+
+    <div class="holiday-year">
+      <h3>2000</h3>
+      <div class="holiday-cards-grid">
+        <img src="../images/holiday-cards/2000-outside.gif" alt="2000 Holiday Card Outside" loading="lazy">
+        <img src="../images/holiday-cards/2000-inside.jpg" alt="2000 Holiday Card Inside" loading="lazy">
+      </div>
+    </div>
+
+    <div class="holiday-year">
+      <h3>1999</h3>
+      <div class="holiday-cards-grid">
+        <img src="../images/holiday-cards/1999-outside.gif" alt="1999 Holiday Card Outside" loading="lazy">
+        <img src="../images/holiday-cards/1999-inside.gif" alt="1999 Holiday Card Inside" loading="lazy">
+      </div>
+    </div>
+
+    <div class="holiday-year">
+      <h3>1998</h3>
+      <div class="holiday-cards-grid">
+        <img src="../images/holiday-cards/1998-outside.gif" alt="1998 Holiday Card Outside" loading="lazy">
+        <img src="../images/holiday-cards/1998-inside.webp" alt="1998 Holiday Card Inside" loading="lazy">
+      </div>
+    </div>
+
+    <div class="holiday-year">
+      <h3>1997</h3>
+      <div class="holiday-cards-grid">
+        <img src="../images/holiday-cards/1997-outside.gif" alt="1997 Holiday Card Outside" loading="lazy">
+        <img src="../images/holiday-cards/1997-inside.gif" alt="1997 Holiday Card Inside" loading="lazy">
+      </div>
+    </div>
+
+    <div class="holiday-year">
+      <h3>1996</h3>
+      <div class="holiday-cards-grid">
+        <img src="../images/holiday-cards/1996-outside.gif" alt="1996 Holiday Card Outside" loading="lazy">
+        <img src="../images/holiday-cards/1996-inside.gif" alt="1996 Holiday Card Inside" loading="lazy">
+      </div>
+    </div>
+
+    <div class="holiday-year">
+      <h3>1995</h3>
+      <div class="holiday-cards-grid">
+        <img src="../images/holiday-cards/1995-outside.gif" alt="1995 Holiday Card Outside" loading="lazy">
+        <img src="../images/holiday-cards/1995-inside.webp" alt="1995 Holiday Card Inside" loading="lazy">
+      </div>
+    </div>
+
+    <div class="holiday-year">
+      <h3>1994</h3>
+      <div class="holiday-cards-grid">
+        <img src="../images/holiday-cards/1994-outside.webp" alt="1994 Holiday Card Outside" loading="lazy">
+        <img src="../images/holiday-cards/1994-inside.webp" alt="1994 Holiday Card Inside" loading="lazy">
+      </div>
+    </div>
+
+    <div class="holiday-year">
+      <h3>1993</h3>
+      <div class="holiday-cards-grid">
+        <img src="../images/holiday-cards/1993-outside.webp" alt="1993 Holiday Card Outside" loading="lazy">
+        <img src="../images/holiday-cards/1993-inside.webp" alt="1993 Holiday Card Inside" loading="lazy">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<script src="../js/main.js"></script>
+<script>
+  initSite('Holiday Cards');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.holiday-year').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
