@@ -69,7 +69,7 @@ function buildFooter() {
       </div>
       <p class="footer-copy">
         &copy; ${new Date().getFullYear()} JDSPR.COM All Rights Reserved.
-        Website by <a href="https://castellamediagroup.com" target="_blank" rel="noopener">Castella Media Group</a>
+        Website by <a href="https://castellamedia.com" target="_blank" rel="noopener">Castella Media Group</a>
       </p>
     </div>
   </footer>`;
