@@ -127,6 +127,23 @@ async function loadPressData() {
   return data;
 }
 
+function clientsOf(article) {
+  if (Array.isArray(article.clients) && article.clients.length) {
+    return article.clients.map((name, i) => ({ name, slug: (article.clientSlugs && article.clientSlugs[i]) || '' }));
+  }
+  if (article.client) {
+    return [{ name: article.client, slug: article.clientSlug || '' }];
+  }
+  return [];
+}
+
+function clientTagsHtml(article) {
+  const base = getBasePath();
+  return clientsOf(article)
+    .map(c => `<span class="press-client"><a href="${base}clients/${c.slug}.html">${c.name}</a></span>`)
+    .join(' ');
+}
+
 function renderPressCards(articles, container, limit) {
   const items = limit ? articles.slice(0, limit) : articles;
   container.innerHTML = items.map(a => `
@@ -135,7 +152,7 @@ function renderPressCards(articles, container, limit) {
       <div class="press-card-body">
         <h3><a href="${a.url}" target="_blank" rel="noopener">${a.title}</a></h3>
         <div class="press-meta">${a.source} &middot; ${a.date}</div>
-        ${a.client ? `<span class="press-client">${a.client}</span>` : ''}
+        ${clientTagsHtml(a)}
       </div>
     </div>
   `).join('');
@@ -144,7 +161,7 @@ function renderPressCards(articles, container, limit) {
 /* Load press for a specific client on their profile page */
 async function loadClientPress(clientSlug, containerId, limit) {
   const data = await loadPressData();
-  const filtered = data.filter(a => a.clientSlug === clientSlug);
+  const filtered = data.filter(a => clientsOf(a).some(c => c.slug === clientSlug));
   const container = document.getElementById(containerId);
   if (container && filtered.length) {
     renderPressCards(filtered, container, limit);
@@ -166,7 +183,7 @@ async function loadAllPress(containerId, perPage) {
         <div class="press-card-body">
           <h3><a href="${a.url}" target="_blank" rel="noopener">${a.title}</a></h3>
           <div class="press-meta">${a.source} &middot; ${a.date}</div>
-          ${a.client ? `<span class="press-client">${a.client}</span>` : ''}
+          ${clientTagsHtml(a)}
         </div>
       </div>
     `).join('');
