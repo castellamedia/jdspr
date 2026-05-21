@@ -1,5 +1,41 @@
 [
   {
+    "title": "'Charlie's Angels' star says she was previously diagnosed with breast cancer as show marks 50th anniversary",
+    "date": "April 7, 2026",
+    "clients": ["Cheryl Ladd", "Jaclyn Smith"],
+    "clientSlugs": ["cheryl-ladd", "jaclyn-smith"],
+    "source": "Good Morning America",
+    "url": "https://www.goodmorningamerica.com/culture/story/charlies-angels-star-previously-diagnosed-breast-cancer-show-131796458",
+    "image": "images/press/charlies-angels-cheryl-ladd-breast-cancer-gma.webp"
+  },
+  {
+    "title": "'Charlie's Angels' Stars Recall Bikini Battles, Cast Changes, Health Scares and Making TV History: 'It Gave Women Permission to Be Independent'",
+    "date": "April 7, 2026",
+    "clients": ["Jaclyn Smith", "Cheryl Ladd"],
+    "clientSlugs": ["jaclyn-smith", "cheryl-ladd"],
+    "source": "Variety",
+    "url": "https://variety.com/2026/tv/news/charlies-angels-paleyfest-panel-50th-anniversary-stars-1236710151/",
+    "image": "images/press/charlies-angels-paleyfest-50th-variety.webp"
+  },
+  {
+    "title": "Charlie's Angels stars show off age-defying looks as they reunite 50 years after iconic show's debut",
+    "date": "April 7, 2026",
+    "clients": ["Jaclyn Smith", "Cheryl Ladd"],
+    "clientSlugs": ["jaclyn-smith", "cheryl-ladd"],
+    "source": "The Sun",
+    "url": "https://www.the-sun.com/entertainment/16188038/charlies-angels-original-stars-reunite-50-years-show-debut/",
+    "image": "images/press/charlies-angels-age-defying-reunion-the-sun.webp"
+  },
+  {
+    "title": "'Charlie's Angels' Cast Reunites in Los Angeles to Honor 50th Anniversary",
+    "date": "April 8, 2026",
+    "clients": ["Jaclyn Smith", "Cheryl Ladd"],
+    "clientSlugs": ["jaclyn-smith", "cheryl-ladd"],
+    "source": "Extra",
+    "url": "https://insight.tveyes.com/public/media-center/21eec158-7b4d-43b9-9ddc-a8f0c9ba0bf8/d1a9512f-b6e6-4827-ba50-8c5db8acf014?tab=transcript",
+    "image": "images/press/charlies-angels-50th-reunion-extra.webp"
+  },
+  {
     "title": "Marking 50th Anniversary of 'Charlie's Angels'",
     "date": "April 7, 2026",
     "clients": ["Jaclyn Smith", "Cheryl Ladd"],
