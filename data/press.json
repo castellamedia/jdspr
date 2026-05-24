@@ -1,5 +1,14 @@
 [
   {
+    "title": "'Charlie's Angels' 50th Anniversary",
+    "date": "May 23, 2026",
+    "clients": ["Cheryl Ladd", "Jaclyn Smith"],
+    "clientSlugs": ["cheryl-ladd", "jaclyn-smith"],
+    "source": "ABC World News Tonight With David Muir",
+    "url": "https://insight.tveyes.com/public/share/90158b3b-fcd9-4d7d-9cbc-6508a70c2c05/a6d677cf-d027-41ac-ac6f-fa263b531559?tab=transcript",
+    "image": "images/press/charlies-angels-abc-world-news-tonight.webp"
+  },
+  {
     "title": "Dawnn Lewis' A Different World Memories",
     "date": "May 23, 2026",
     "client": "Dawnn Lewis",
