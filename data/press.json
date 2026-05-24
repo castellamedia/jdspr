@@ -1,5 +1,15 @@
 [
   {
+    "title": "Charlie's Angels' Kate Jackson, Jaclyn Smith and Cheryl Ladd Celebrate 50th Anniversary",
+    "date": "April 7, 2026",
+    "clients": ["Cheryl Ladd", "Jaclyn Smith"],
+    "clientSlugs": ["cheryl-ladd", "jaclyn-smith"],
+    "source": "E! News",
+    "url": "https://www.eonline.com/news/1430624/kate-jackson-jaclyn-smith-cheryl-ladd-on-charlies-angels-50th-reunion",
+    "image": "images/press/charlies-angels-50th-eonline.webp",
+    "imagePosition": "top"
+  },
+  {
     "title": "Charlie's Angels Celebrate 50 Years At PaleyFest LA",
     "date": "April 7, 2026",
     "clients": ["Cheryl Ladd", "Jaclyn Smith"],
