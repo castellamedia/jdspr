@@ -1,5 +1,14 @@
 [
   {
+    "title": "Charlie's Angels Celebrate 50 Years At PaleyFest LA",
+    "date": "April 7, 2026",
+    "clients": ["Cheryl Ladd", "Jaclyn Smith"],
+    "clientSlugs": ["cheryl-ladd", "jaclyn-smith"],
+    "source": "KTLA 5 News at 1",
+    "url": "https://insight.tveyes.com/public/media-center/21eec158-7b4d-43b9-9ddc-a8f0c9ba0bf8/0dac1f8b-9e5d-4756-b9d6-9a8e12f17a27?tab=program",
+    "image": "images/press/charlies-angels-paleyfest-ktla5.webp"
+  },
+  {
     "title": "Charlie's Angels 50th Anniversary",
     "date": "April 8, 2026",
     "clients": ["Cheryl Ladd", "Jaclyn Smith"],
