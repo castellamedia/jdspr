@@ -1,5 +1,32 @@
 [
   {
+    "title": "Kate Jackson Says Enduring Sisterhood with Jaclyn Smith and Cheryl Ladd Is 'a Real Love' That 'Doesn't Go Away' (Exclusive)",
+    "date": "April 12, 2026",
+    "clients": ["Cheryl Ladd", "Jaclyn Smith"],
+    "clientSlugs": ["cheryl-ladd", "jaclyn-smith"],
+    "source": "People",
+    "url": "https://people.com/kate-jackson-on-the-enduring-sisterhood-with-jaclyn-smith-and-cheryl-ladd-it-s-a-real-love-it-doesn-t-go-away-exclusive-11945640",
+    "image": "images/press/charlies-angels-sisterhood-real-love-people.webp"
+  },
+  {
+    "title": "Cheryl Ladd Says Farrah Fawcett Didn't Give Her Any Charlie's Angels Advice, but Recalls Her Being 'Warm and Friendly' (Exclusive)",
+    "date": "April 11, 2026",
+    "client": "Cheryl Ladd",
+    "clientSlug": "cheryl-ladd",
+    "source": "People",
+    "url": "https://people.com/cheryl-ladd-friendly-farrah-fawcett-didnt-give-charlies-angels-advice-exclusive-11945002",
+    "image": "images/press/cheryl-ladd-farrah-fawcett-advice-people.webp"
+  },
+  {
+    "title": "How Cheryl Ladd Outsmarted Charlie's Angels EP Aaron Spelling and Got Out of Wearing Bikinis (Exclusive)",
+    "date": "April 7, 2026",
+    "client": "Cheryl Ladd",
+    "clientSlug": "cheryl-ladd",
+    "source": "People",
+    "url": "https://people.com/how-cheryl-ladd-got-out-of-wearing-bikinis-on-charlies-angels-exclusive-11944629",
+    "image": "images/press/cheryl-ladd-bikinis-aaron-spelling-people.webp"
+  },
+  {
     "title": "Charlie's Angels stars get emotional at 50th anniversary reunion: 'We were there for each other'",
     "date": "April 7, 2026",
     "clients": ["Cheryl Ladd", "Jaclyn Smith"],
