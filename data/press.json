@@ -1,5 +1,15 @@
 [
   {
+    "title": "'Charlie's Angels' Soars to a Golden Milestone",
+    "date": "April 19, 2026",
+    "clients": ["Cheryl Ladd", "Jaclyn Smith"],
+    "clientSlugs": ["cheryl-ladd", "jaclyn-smith"],
+    "source": "Los Angeles Times",
+    "image": "images/press/charlies-angels-golden-milestone-latimes.webp",
+    "imagePosition": "top",
+    "imageFit": "width"
+  },
+  {
     "title": "Surviving Breast Cancer Together",
     "date": "May 4, 2026",
     "clients": ["Cheryl Ladd", "Jaclyn Smith"],

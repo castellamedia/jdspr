@@ -146,15 +146,25 @@ function clientTagsHtml(article) {
 
 function pressCardHtml(a) {
   const base = getBasePath();
+  const imgStyle = a.imagePosition ? ` style="object-position: ${a.imagePosition};"` : '';
   const inner = a.image
-    ? `<img src="${base + a.image}" alt="${a.title}" loading="lazy">`
+    ? `<img src="${base + a.image}" alt="${a.title}" loading="lazy"${imgStyle}>`
     : `<div class="press-placeholder"><img src="${base}images/logo.jpg" alt="JDS PR"></div>`;
-  const media = a.url
-    ? `<a href="${a.url}" target="_blank" rel="noopener">${inner}</a>`
-    : inner;
-  const title = a.url
-    ? `<a href="${a.url}" target="_blank" rel="noopener">${a.title}</a>`
-    : a.title;
+
+  let media, title;
+  if (a.url) {
+    media = `<a href="${a.url}" target="_blank" rel="noopener">${inner}</a>`;
+    title = `<a href="${a.url}" target="_blank" rel="noopener">${a.title}</a>`;
+  } else if (a.image) {
+    const full = base + a.image;
+    const fitAttr = a.imageFit ? ` data-fit="${a.imageFit}"` : '';
+    media = `<button type="button" class="press-image-trigger" data-full="${full}" data-caption="${a.title}"${fitAttr} aria-label="View ${a.title}">${inner}</button>`;
+    title = `<button type="button" class="press-image-trigger press-title-trigger" data-full="${full}" data-caption="${a.title}"${fitAttr}>${a.title}</button>`;
+  } else {
+    media = inner;
+    title = a.title;
+  }
+
   return `
     <div class="press-card">
       ${media}
@@ -221,13 +231,26 @@ function initLightbox() {
     });
   });
 
+  document.addEventListener('click', (e) => {
+    const trigger = e.target.closest('.press-image-trigger');
+    if (!trigger) return;
+    lbImg.src = trigger.dataset.full;
+    if (lbCaption) lbCaption.textContent = trigger.dataset.caption || '';
+    lightbox.classList.toggle('fit-width', trigger.dataset.fit === 'width');
+    lightbox.scrollTop = 0;
+    lightbox.classList.add('open');
+  });
+
+  function close() {
+    lightbox.classList.remove('open');
+    lightbox.classList.remove('fit-width');
+  }
+
   lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox || e.target === closeBtn) {
-      lightbox.classList.remove('open');
-    }
+    if (e.target === lightbox || e.target === closeBtn) close();
   });
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') lightbox.classList.remove('open');
+    if (e.key === 'Escape') close();
   });
 }

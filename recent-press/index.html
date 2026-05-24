@@ -28,10 +28,17 @@
 
 <div id="site-footer"></div>
 
+<div id="lightbox" class="lightbox">
+  <button class="lightbox-close">&times;</button>
+  <img src="" alt="">
+  <div class="lightbox-caption"></div>
+</div>
+
 <script src="../js/main.js"></script>
 <script>
   initSite('Recent Press');
   loadAllPress('press-grid', 12);
+  initLightbox();
 </script>
 </body>
 </html>
