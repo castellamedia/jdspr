@@ -1,5 +1,13 @@
 [
   {
+    "title": "Surviving Breast Cancer Together",
+    "date": "May 4, 2026",
+    "clients": ["Cheryl Ladd", "Jaclyn Smith"],
+    "clientSlugs": ["cheryl-ladd", "jaclyn-smith"],
+    "source": "People",
+    "image": "images/press/charlies-angels-surviving-breast-cancer-people.webp"
+  },
+  {
     "title": "'Charlie's Angels' star says she was previously diagnosed with breast cancer as show marks 50th anniversary",
     "date": "April 7, 2026",
     "clients": ["Cheryl Ladd", "Jaclyn Smith"],

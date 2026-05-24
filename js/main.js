@@ -144,18 +144,32 @@ function clientTagsHtml(article) {
     .join(' ');
 }
 
-function renderPressCards(articles, container, limit) {
-  const items = limit ? articles.slice(0, limit) : articles;
-  container.innerHTML = items.map(a => `
+function pressCardHtml(a) {
+  const base = getBasePath();
+  const inner = a.image
+    ? `<img src="${base + a.image}" alt="${a.title}" loading="lazy">`
+    : `<div class="press-placeholder"><img src="${base}images/logo.jpg" alt="JDS PR"></div>`;
+  const media = a.url
+    ? `<a href="${a.url}" target="_blank" rel="noopener">${inner}</a>`
+    : inner;
+  const title = a.url
+    ? `<a href="${a.url}" target="_blank" rel="noopener">${a.title}</a>`
+    : a.title;
+  return `
     <div class="press-card">
-      ${a.image ? `<a href="${a.url}" target="_blank" rel="noopener"><img src="${getBasePath() + a.image}" alt="${a.title}" loading="lazy"></a>` : `<a href="${a.url}" target="_blank" rel="noopener"><div class="press-placeholder"><img src="${getBasePath()}images/logo.jpg" alt="JDS PR"></div></a>`}
+      ${media}
       <div class="press-card-body">
-        <h3><a href="${a.url}" target="_blank" rel="noopener">${a.title}</a></h3>
+        <h3>${title}</h3>
         <div class="press-meta">${a.source} &middot; ${a.date}</div>
         ${clientTagsHtml(a)}
       </div>
     </div>
-  `).join('');
+  `;
+}
+
+function renderPressCards(articles, container, limit) {
+  const items = limit ? articles.slice(0, limit) : articles;
+  container.innerHTML = items.map(pressCardHtml).join('');
 }
 
 /* Load press for a specific client on their profile page */
@@ -177,16 +191,7 @@ async function loadAllPress(containerId, perPage) {
 
   function showMore() {
     const next = data.slice(shown, shown + perPage);
-    const html = next.map(a => `
-      <div class="press-card">
-        ${a.image ? `<a href="${a.url}" target="_blank" rel="noopener"><img src="${getBasePath() + a.image}" alt="${a.title}" loading="lazy"></a>` : `<a href="${a.url}" target="_blank" rel="noopener"><div class="press-placeholder"><img src="${getBasePath()}images/logo.jpg" alt="JDS PR"></div></a>`}
-        <div class="press-card-body">
-          <h3><a href="${a.url}" target="_blank" rel="noopener">${a.title}</a></h3>
-          <div class="press-meta">${a.source} &middot; ${a.date}</div>
-          ${clientTagsHtml(a)}
-        </div>
-      </div>
-    `).join('');
+    const html = next.map(pressCardHtml).join('');
     container.insertAdjacentHTML('beforeend', html);
     shown += next.length;
     if (shown >= data.length && btn) btn.style.display = 'none';
