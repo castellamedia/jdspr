@@ -1,5 +1,14 @@
 [
   {
+    "title": "Charlie's Angels 50th Anniversary",
+    "date": "April 8, 2026",
+    "clients": ["Cheryl Ladd", "Jaclyn Smith"],
+    "clientSlugs": ["cheryl-ladd", "jaclyn-smith"],
+    "source": "Access Hollywood",
+    "url": "https://insight.tveyes.com/public/media-center/21eec158-7b4d-43b9-9ddc-a8f0c9ba0bf8/dbc27afc-e5f0-4977-a91e-fedb2a5262d1?tab=transcript",
+    "image": "images/press/charlies-angels-50th-access-hollywood.webp"
+  },
+  {
     "title": "'Charlie's Angels' Reunite After 50 Years",
     "date": "April 8, 2026",
     "clients": ["Cheryl Ladd", "Jaclyn Smith"],
