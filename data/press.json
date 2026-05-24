@@ -1,5 +1,14 @@
 [
   {
+    "title": "'Charlie's Angels' Reunite After 50 Years",
+    "date": "April 8, 2026",
+    "clients": ["Cheryl Ladd", "Jaclyn Smith"],
+    "clientSlugs": ["cheryl-ladd", "jaclyn-smith"],
+    "source": "CBS News Mornings",
+    "url": "https://insight.tveyes.com/public/media-center/21eec158-7b4d-43b9-9ddc-a8f0c9ba0bf8/7982cdf2-b4ba-4e84-8825-7703909e20f2?tab=program",
+    "image": "images/press/charlies-angels-reunite-50-years-cbs-mornings.webp"
+  },
+  {
     "title": "'Charlie's Angels' 50th Anniversary",
     "date": "April 7, 2026",
     "clients": ["Cheryl Ladd", "Jaclyn Smith"],
